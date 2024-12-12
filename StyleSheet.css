@@ -1,0 +1,32 @@
+﻿body {
+}
+
+#Slide
+{
+    width:1530px;
+    height:50%;
+    
+}
+#glance{
+    font-family:'Kristen ITC';
+    font-weight:500;
+    color:white;
+    background-attachment:fixed;
+    background-image:url(../Images/Products/rRdRoses.jpeg);
+    height:600px;
+}
+#gPosition{
+    margin-top:80px;
+    margin-left:50px;
+}
+.pImg{-moz-transition: transform 2s linear;
+      -webkit-transition:transform 2s linear;
+    
+}
+.pImg:hover{
+    transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+}

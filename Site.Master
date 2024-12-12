@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="KongPosh_ShoppingCart.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+        <script src="jquery-1.11.2.js"></script>
+        <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+        <link href="Stylesheets/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div class="col-md-12" style="background-color:darkred; display:inline">
+             <!--Logo Starts-->               
+                 <table>
+                     <tr>
+                         <td style="margin-left:300px"> <asp:Image ImageUrl="~/Images/Products/Saffron.jpg" Width="200" Height="200" runat="server" /></td>
+                         <td style="font-family:'Kristen ITC';margin-left:500px;margin-top:0px; font-weight:700;font-size:xx-large;color: #ffffff;">Kong Posh-The Flower Shop</td>
+                         
+                     </tr>
+                     
+                    
+                        <%-- <td><p style="font-family:Impact; font-weight:900; font-size:xx-large;color: rebeccapurple">KONG</p>
+                          <p style="font-family:Impact; font-weight:900;font-size:xx-large;color: white">POSH</p></td>
+                    --%>
+                         
+                 </table>
+                <!--Logo Ends-->
+            
+
+            <!--Menu Begins-->
+
+             <div class="container-fluid"  >
+                            <div class=" row col-md-12" >
+                                <nav class="navbar navbar-nav" role="navigation">
+                                    <div class="col-md-12" id="top">
+                                        <ul class="nav navbar-nav menu" >
+                                            <li class="active menu"><a href="Default.aspx">
+                                                <h4 style="color:#ffffff;font-family:'Kristen ITC'" >Home</h4>
+                                            </a></li>
+                                            <li>
+                                            </li>
+                                            <li class="menu"><a href="AboutUs.aspx">
+                                                <h4 style="color:#ffffff;font-family:'Kristen ITC'">About Us</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="Products.aspx">
+                                                <h4 style="color:#ffffff;font-family:'Kristen ITC'">Products</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="Default.aspx#footer">
+                                                <h4  style="color:#ffffff;font-family:'Kristen ITC'">Contact Us</h4>
+                                            </a></li>
+                                             <li class="menu"><a href="Cart.aspx">
+                                                <h4 style="color:#ffffff; font-family:'Kristen ITC'">Go To Bag</h4>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                     </div>
+            </div>
+            <!--Menu Ends-->
+
+
+
+        
+       
+               
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>
